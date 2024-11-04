@@ -1,0 +1,24 @@
+version: 4.0.79
+steps:
+  - prompt: Click on the "Are you a new user?" link.
+    commands:
+      - command: hover-text
+        text: Are you a new user?
+        description: link to sign up for new users
+        action: click
+  - prompt: Assert that a sign-up form is displayed.
+    commands:
+      - command: assert
+        expect: New User form is displayed
+  - prompt: Complete the sign-up process using test data.
+    commands:
+      - command: hover-text
+        text: Email
+        description: email input field
+        action: click
+      - command: type
+        text: test@example.com
+      - command: hover-text
+        text: Send
+        description: send button
+        action: click
