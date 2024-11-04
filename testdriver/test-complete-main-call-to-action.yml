@@ -1,0 +1,30 @@
+version: 4.0.79
+steps:
+  - prompt: Click the main call to action, such as "Log In" or "Sign Up."
+    commands:
+      - command: hover-text
+        text: Log In
+        description: main call to action button
+        action: click
+  - prompt: >-
+      Assert that the action redirects to the intended page or performs the
+      desired function.
+    commands:
+      - command: assert
+        expect: Username or password is invalid. Please try again.
+  - prompt: Complete any additional onboarding or interaction steps.
+    commands:
+      - command: hover-text
+        text: Are you a new user?
+        description: link for new user onboarding
+        action: click
+      - command: hover-text
+        text: Get Started
+        description: button for starting onboarding
+        action: click
+  - prompt: >-
+      Assert that a confirmation message or appropriate feedback is shown.  #
+      Use the content of the file from the environment
+    commands:
+      - command: assert
+        expect: Invalid Information Provided
