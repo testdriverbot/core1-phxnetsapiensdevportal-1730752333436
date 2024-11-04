@@ -1,0 +1,16 @@
+version: 4.0.79
+steps:
+  - prompt: Locate the newsletter subscription section.
+    commands:
+      - command: scroll
+        direction: down
+  - prompt: Locate the newsletter subscription section.
+    commands:
+      - command: scroll-until-text
+        text: Subscribe to our newsletter
+        direction: down
+  - prompt: Locate the newsletter subscription section.
+    commands:
+      - command: scroll-until-text
+        text: Newsletter Subscription
+        direction: down
