@@ -1,0 +1,18 @@
+version: 4.0.79
+steps:
+  - prompt: Locate the feedback or contact form.
+    commands:
+      - command: scroll-until-text
+        text: Contact Us
+        direction: down
+  - prompt: Locate the feedback or contact form.
+    commands:
+      - command: hover-text
+        text: Are you a new user?
+        description: link at the bottom of the login form
+        action: click
+  - prompt: Locate the feedback or contact form.
+    commands:
+      - command: scroll-until-text
+        text: Feedback
+        direction: down
