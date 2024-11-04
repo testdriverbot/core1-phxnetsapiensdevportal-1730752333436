@@ -1,0 +1,26 @@
+version: 4.0.79
+steps:
+  - prompt: Click on the "About" link in the header or footer.
+    commands:
+      - command: hover-text
+        text: About
+        description: link in the header or footer
+        action: click
+  - prompt: Click on the "About" link in the header or footer.
+    commands:
+      - command: scroll-until-text
+        text: About
+        direction: down
+      - command: hover-text
+        text: About
+        description: link in the header or footer
+        action: click
+  - prompt: Click on the "About" link in the header or footer.
+    commands:
+      - command: scroll-until-text
+        text: About
+        direction: down
+      - command: hover-text
+        text: About
+        description: link in the header or footer
+        action: click
